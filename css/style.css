@@ -1,0 +1,117 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: hsla(328, 75%, 42%, 0.648);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    color: #0c0808;
+    text-decoration: none;
+}
+
+.navbar {
+    font-weight: bold;
+}
+
+.swiper-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #474646;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 30px;
+    background-color: #f0f0f0;
+}
+
+.swiper-pagination {
+    position: relative;
+    text-align: center;
+    bottom: 10px;
+}
+
+footer {
+    background-color: hsla(328, 75%, 42%, 0.648);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Dropdown menüsünü gizle */
+.dropdown-content {
+    display: none;
+   
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 2px;
+    list-style-type: none;
+    margin: 2px; display: none;
+    position: absolute;
+    width: 200px;
+    z-index: 999;
+    left: 0;
+}
+.dropdown-content li {
+    display: block;
+    padding: 6px 8px;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: block;
+}
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+section {
+    margin-top: 70px; /* Navbar yüksekliğine göre uygun bir değer */
+}
+.navbar-brand {
+    font-size: 24px; /*  */
+    font-weight: bold; /* */
+    color: #060505; /* n */
+    text-decoration: none; /* Link altı çizgi */
+    text-align: left;
+    position:absolute;/* Pozisyonu mutlak yap */
+    left:0; /* Sol kenara yapıştır */
+    margin-top: 20px; 
+}
